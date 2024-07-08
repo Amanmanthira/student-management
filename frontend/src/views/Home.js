@@ -1,14 +1,15 @@
 import React from 'react';
 import HomeNav from '../components/HomeNav';
 import { FaCheckCircle, FaCloud, FaMobileAlt, FaChartBar, FaSyncAlt, FaShieldAlt } from 'react-icons/fa';
-import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
     <>
+    <HomeNav />
       {/* Hero Section */}
       <div className="area">
-        <HomeNav />
+        
         <div>
           <ul className="circles">
             <div className='p-6 py-20'>
@@ -121,7 +122,7 @@ const Home = () => {
       {/* intro Section End */}
 
       {/* Contact Section  */}
-<div className='bg-indigo-600 w-full py-16 md:h-screen md:py-24 md:px-9 m-0'>
+<form className='bg-indigo-600 w-full py-16 md:h-screen md:py-24 md:px-9 m-0'>
   <div className='text-center py-5 md:mb-9'>
     <h1 className='text-3xl md:text-5xl text-white font-bold'>Drop us a Line.</h1>
     <p className='text-white font-semibold md:text-2xl mt-2'>Ask us a question, or just say Hello.</p>
@@ -164,8 +165,11 @@ const Home = () => {
           </div>
 
         </div>
-        </div>
+        </form>
 {/* Contact Section End*/}
+
+{/* Footer Component*/}
+<Footer/>
 
     </>
   );

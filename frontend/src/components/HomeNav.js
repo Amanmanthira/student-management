@@ -60,8 +60,12 @@ const HomeNav= () => {
 
                 {/* Profile */}
                 <div className="flex space-x-2">
-                    <button className='b1 px-6 py-2 rounded-2xl text-white bg-blue-800 hover:bg-blue-600 transition duration-300'>Sign Up</button> 
-                    <button className='px-6 py-2 rounded-2xl text-gray-400 bg-white hover:bg-gray-100 transition duration-300'>Log In</button>
+                  <a href='/register'>
+                        <button className='b1 px-6 py-2 rounded-2xl text-white bg-blue-800 hover:bg-blue-600 transition duration-300'>Sign Up</button> 
+                  </a>
+                    <a href='/login'>
+                        <button className='px-6 py-2 rounded-2xl text-gray-400 bg-white hover:bg-gray-100 transition duration-300'>Log In</button>
+                    </a>
                 </div>
 
 
